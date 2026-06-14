@@ -32,7 +32,7 @@ export default function Hero() {
             Voir mes projets
           </a>
           <a
-            href="#"
+            href="https://drive.google.com/file/d/17idWYgHYrkwwtWTdLsPlkCVnnc5D5kFQ/view?usp=sharing"
             className="border-2 border-black text-black px-7 py-3 rounded text-sm font-medium transition-all hover:bg-taupe"
           >
             Télécharger mon CV
