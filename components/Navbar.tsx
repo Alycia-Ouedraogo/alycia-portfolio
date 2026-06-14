@@ -30,56 +30,58 @@ export default function Navbar() {
       </a>
 
       <ul
-        className={`nav-links hidden md:flex gap-8 list-none ${menuOpen ? "open" : ""}`}
+        className={`fixed top-16 left-0 right-0 flex flex-col bg-white border-b border-taupe gap-0 list-none md:static md:border-none md:flex-row md:gap-8 md:bg-transparent ${
+          menuOpen ? "flex" : "hidden md:flex"
+        }`}
         id="nav-links"
       >
-        <li>
+        <li className="md:contents">
           <a
             href="#about"
-            className="text-xs font-medium text-mid hover:text-black transition-colors uppercase tracking-widest"
+            className="block px-6 py-3 md:p-0 text-xs font-medium text-mid hover:text-black transition-colors uppercase tracking-widest border-b md:border-none"
             onClick={handleLinkClick}
           >
             À propos
           </a>
         </li>
-        <li>
+        <li className="md:contents">
           <a
             href="#projects"
-            className="text-xs font-medium text-mid hover:text-black transition-colors uppercase tracking-widest"
+            className="block px-6 py-3 md:p-0 text-xs font-medium text-mid hover:text-black transition-colors uppercase tracking-widest border-b md:border-none"
             onClick={handleLinkClick}
           >
             Projets
           </a>
         </li>
-        <li>
+        <li className="md:contents">
           <a
             href="#skills"
-            className="text-xs font-medium text-mid hover:text-black transition-colors uppercase tracking-widest"
+            className="block px-6 py-3 md:p-0 text-xs font-medium text-mid hover:text-black transition-colors uppercase tracking-widest border-b md:border-none"
             onClick={handleLinkClick}
           >
             Compétences
           </a>
         </li>
-        <li>
+        <li className="md:contents">
           <a
             href="#experience"
-            className="text-xs font-medium text-mid hover:text-black transition-colors uppercase tracking-widest"
+            className="block px-6 py-3 md:p-0 text-xs font-medium text-mid hover:text-black transition-colors uppercase tracking-widest border-b md:border-none"
             onClick={handleLinkClick}
           >
             Expérience
           </a>
         </li>
-        <li>
+        <li className="md:contents">
           <a
             href="#contact"
-            className="text-xs font-medium text-mid hover:text-black transition-colors uppercase tracking-widest"
+            className="block px-6 py-3 md:p-0 text-xs font-medium text-mid hover:text-black transition-colors uppercase tracking-widest border-b md:border-none"
             onClick={handleLinkClick}
           >
             Contact
           </a>
         </li>
-        <li>
-          <a href="#" className="px-4 py-2 bg-black text-white text-xs font-semibold rounded hover:bg-gray-800 transition-colors uppercase tracking-wider">
+        <li className="md:contents">
+          <a href="#" className="block px-6 py-3 md:p-0 md:px-4 md:py-2 bg-black text-white text-xs font-semibold rounded hover:bg-gray-800 transition-colors uppercase tracking-wider md:rounded">
             CV ↗
           </a>
         </li>
