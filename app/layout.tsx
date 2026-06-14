@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Alycia — Développeuse & Fondatrice",
+  title: "Ouedraogo Alycia - Développeuse mobile & Fondatrice",
   description:
-    "Étudiante en informatique, développeuse mobile et fondatrice de startup, créant des produits qui résolvent de vrais problèmes dans les marchés émergents.",
+    "Étudiante en CPGE, développeuse mobile et fondatrice de startup, créant des produits qui résolvent de vrais problèmes dans les marchés émergents.",
   openGraph: {
-    title: "Alycia — Développeuse & Fondatrice",
+    title: "Alycia - Développeuse mobile & Fondatrice",
     description:
-      "Étudiante en informatique, développeuse mobile et fondatrice de startup.",
+      "Étudiante en CPGE, développeuse mobile et fondatrice de startup.",
     type: "website",
   },
 };
