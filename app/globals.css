@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,600&family=Inter:wght@300;400;500;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: #FAFAF8;
+    color: #111010;
+    overflow-x: hidden;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: "Inter", system-ui, sans-serif;
+  }
+}
+
+@layer utilities {
+  /* Watermark text in hero */
+  .hero-watermark {
+    position: absolute;
+    top: 50%;
+    right: -4rem;
+    transform: translateY(-50%) rotate(-90deg);
+    font-family: "Fraunces", Georgia, serif;
+    font-size: clamp(5rem, 14vw, 14rem);
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.04);
+    white-space: nowrap;
+    pointer-events: none;
+    user-select: none;
+    letter-spacing: -0.03em;
+  }
+
+  /* Philosophy quote bar */
+  .quote-bar::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: #E8A020;
+    border-radius: 2px;
+  }
+
+  /* Focus visible styles */
+  :focus-visible {
+    outline: 2px solid #E8A020;
+    outline-offset: 2px;
+  }
+
+  /* Smooth transitions */
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      transition: none !important;
+    }
+  }
+}
+
+@layer utilities {
+  /* Watermark text in hero */
+  .hero-watermark {
+    position: absolute;
+    top: 50%;
+    right: -4rem;
+    transform: translateY(-50%) rotate(-90deg);
+    font-family: "Fraunces", Georgia, serif;
+    font-size: clamp(5rem, 14vw, 14rem);
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.04);
+    white-space: nowrap;
+    pointer-events: none;
+    user-select: none;
+    letter-spacing: -0.03em;
+  }
+
+  /* Philosophy quote bar */
+  .quote-bar::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: #E8A020;
+    border-radius: 2px;
+  }
+}
