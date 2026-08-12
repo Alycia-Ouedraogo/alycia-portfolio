@@ -1,7 +1,7 @@
 export default function Projects() {
   const otherProjects = [
     {
-      title: "Skill-Up",
+      title: "Skill-Up -5e place au Hackaton des Grandes Ecoles",
       description:
         "Une plateforme éducative conçue pour accompagner les élèves dans l'apprentissage, en rendant les matières scientifiques accessibles.",
       tech: ["React Native", "Typescript", "Supabase"],
@@ -101,14 +101,14 @@ export default function Projects() {
           ))}
 
           {/* Coming Soon */}
-          <div className="bg-transparent border-2 border-dashed border-black/12 rounded-lg p-7">
+          {/*<div className="bg-transparent border-2 border-dashed border-black/12 rounded-lg p-7">
             <h3 className="font-serif text-2xl font-normal tracking-tighter text-mid mb-2">
                Luma
             </h3>
             <p className="text-sm text-black/30">
               Luma est une plateforme prédictive de résilience énergétique urbaine basée sur l'experience communautaire.
             </p>
-          </div>
+          </div>*/}
 
           {/*<div className="bg-transparent border-2 border-dashed border-black/12 rounded-lg p-7">
             <h3 className="font-serif text-2xl font-normal tracking-tighter text-mid mb-2">

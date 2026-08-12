@@ -13,8 +13,12 @@ export default function Skills() {
       skills: ["Supabase", "PostgreSQL"],
     },
     {
+      label: "Electronique",
+      skills: ["Maîtrise des capteurs", "Arduino"],
+    },
+    {
       label: "Compétences Produit",
-      skills: ["UI/UX Design", "Planification produit"],
+      skills: ["UI/UX Design", "Planification produit", "Canva", "Git"],
     },
   ];
 
